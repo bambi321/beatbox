@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.egg-info/
+.DS_Store
+
+# Personal Claude Code permissions
+.claude/settings.local.json
+
+# Everything the pipeline makes stays local: references, renders, thumbnails.
+tracks/*
+!tracks/.gitkeep
+
+# Renders of the examples (the track.py scripts are kept).
+examples/*/*.wav
+examples/*/*.mp3
+examples/*/*.json
